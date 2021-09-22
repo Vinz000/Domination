@@ -1,17 +1,16 @@
 compiler=gcc
 panel =-lpanel
 curses=-lncurses
-srcDirectory=srcFiles
 
-srcFiles = 	$(srcDirectory)/io.o \
-		$(srcDirectory)/game.o \
-		$(srcDirectory)/main.o \
-		$(srcDirectory)/curses.o \
-$(srcDirectory)/print.o \
+srcFiles = 	src/io.o \
+		src/game.o \
+		src/main.o \
+		src/curses.o \
+		src/print.o \
 
 domination: $(srcFiles)
 	$(compiler) -o domination $(srcFiles) $(panel) $(curses)  
-	@rm $(srcDirectory)/*.o
+	@rm src/*.o
 
 clean:
 	rm domination
