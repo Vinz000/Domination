@@ -1,5 +1,7 @@
 # Domination
-A C implementation of the boardgame 'Domination' using the ncurses library.
+Created in my first year as part of COMP10050-Software Engineering 1
+
+C implementation of the boardgame 'Domination' using the ncurses library.
 
 ### Tools
 - C
